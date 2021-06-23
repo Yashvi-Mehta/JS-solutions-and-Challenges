@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         function trackRobot(...steps) {
+            let result = [0, 0];
+            for (let i = 0; i < steps.length; i++) {
+               let direction = i % 4;
+               //North
+               if (direction == 0) result[1] += steps[i];
+               //East
+               if (direction == 1) result[0] += steps[i];
+               //South
+               if (direction == 2) result[1] -= steps[i];
+               //West
+               if (direction == 3) result[0] -= steps[i];
+            }
+            return result;
+         }
+      </script>
+   </body>
+</html>
