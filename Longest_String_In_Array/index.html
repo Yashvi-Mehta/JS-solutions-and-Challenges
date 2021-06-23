@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const StringArrays = [
+            'fgvhbjn',
+            'dfghjn',
+            'swedfgyhjik',
+            'xdcfvgbhjknss',
+            'xdcfvgbhjsfff',
+            'a',
+            'fcgvh',
+         ];
+
+         const findLongestString = (s) => {
+            let max_length = 0;
+            let longestString = '';
+            for (let i = 0; i < s.length; i++) {
+               if (s[i].length > max_length) {
+                  max_length = s[i].length;
+                  longestString = s[i];
+               }
+               if (s[i].length == max_length) {
+                  continue;
+               }
+            }
+            return longestString;
+         };
+         console.log(findLongestString(StringArrays));
+      </script>
+   </body>
+</html>

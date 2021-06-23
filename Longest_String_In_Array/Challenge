@@ -1,0 +1,30 @@
+Source: https://www.educative.io/blog/level-up-javascript-coding-challenges#longest-string-in-an-array
+
+Prompt
+Write a function that accepts an array of strings. Return the longest string.
+
+
+Approach
+What is our Input?
+String[] = an array of strings
+
+What is our Output?
+String = the longest of the strings in the array
+
+Questions to ask the interviewer:
+Do we need to consider if there are no strings in the array?
+
+For this challenge, no
+Do we need to consider times when all of the strings are the same length?
+
+Yes. Return the first string.
+
+Longest String Plan
+For this problem, we need to:
+
+Initialize and Declare Variable for Longest String
+Loop through the array
+Find the length of each string
+Determine if that length is the largest we have seen so far.
+Replace the longest/largest variable with the arr[index] as long as length is greater than the variable.
+Return longest/largest string.
